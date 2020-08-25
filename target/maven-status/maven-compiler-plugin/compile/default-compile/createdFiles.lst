@@ -1,0 +1,5 @@
+com/example/rest/service/Application.class
+com/example/rest/service/EchoController.class
+com/example/rest/service/Greeting.class
+com/example/rest/service/TomcatConfig.class
+com/example/rest/service/Echo.class

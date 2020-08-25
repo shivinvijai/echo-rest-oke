@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.rest.service.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.617 s - in com.example.rest.service.ApplicationTests

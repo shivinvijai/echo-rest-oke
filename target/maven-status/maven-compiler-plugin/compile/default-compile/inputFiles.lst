@@ -1,0 +1,5 @@
+/opt/echo-rest-oke/src/main/java/com/example/rest/service/EchoController.java
+/opt/echo-rest-oke/src/main/java/com/example/rest/service/Application.java
+/opt/echo-rest-oke/src/main/java/com/example/rest/service/Greeting.java
+/opt/echo-rest-oke/src/main/java/com/example/rest/service/Echo.java
+/opt/echo-rest-oke/src/main/java/com/example/rest/service/TomcatConfig.java
