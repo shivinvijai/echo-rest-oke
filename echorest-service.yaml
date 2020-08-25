@@ -15,27 +15,32 @@ spec:
       targetPort: 8080
   externalTrafficPolicy: Local
   type: NodePort
----
+--- 
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: 
+  labels: 
+    app: echorest-app
   name: echorest-deployment
   namespace: echorest-namespace
-  labels:
-    app: echorest-app
-spec:
+spec: 
   replicas: 2
-  selector:
-    matchLabels:
+  selector: 
+    matchLabels: 
       app: echorest-app
-  template:
-    metadata:
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: echorest-app
-    spec:
-      containers:
-        - name: echorest
-          image: ap-mumbai-1.ocir.io/idx9wbxtnehn/echorest:latest
-          ports:
-            - containerPort: 8080
+    spec: 
+      containers: 
+        - 
+          image: "ap-mumbai-1.ocir.io/idx9wbxtnehn/echorest:latest"
           imagePullPolicy: Always
+          imagePullSecrets: 
+            - 
+              name: ocirsecret
+          name: echorest
+          ports: 
+            - 
+              containerPort: 8080
