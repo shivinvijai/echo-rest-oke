@@ -34,13 +34,10 @@ spec:
         app: echorest-app
     spec: 
       containers: 
-        - 
+        - name: echorest
           image: "ap-mumbai-1.ocir.io/idx9wbxtnehn/echorest:latest"
-          imagePullPolicy: Always
-          imagePullSecrets: 
-            - 
-              name: ocirsecret
-          name: echorest
           ports: 
-            - 
-              containerPort: 8080
+            - containerPort: 8080
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: ocirsecret
